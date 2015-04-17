@@ -4,4 +4,6 @@
 
 These robot are exactly the same size as the [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr).
 
-The [[BOM]](hardware/parts/BOM.md) and [[STL]](https://github.com/poppy-project/poppy-4dof-arm-mini/releases/tag/beta1)
+Links:
+- [BOM](hardware/parts/BOM.md)
+- [STL](https://github.com/poppy-project/poppy-4dof-arm-mini/releases/tag/beta1)
