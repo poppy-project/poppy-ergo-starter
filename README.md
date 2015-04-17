@@ -1,11 +1,7 @@
-# poppy-creature-mini-template
+# poppy-4dof-arm-mini
 
-This is the basics required to create a poppy mini creature. Best practice is to duplicate this repository: https://help.github.com/articles/duplicating-a-repository/
+![Poppy4dofArmMini](doc/img/4-dof-arm-mini.jpg)
 
-- /hardware already includes the submodules needed to create frames between XL320 motors using OpenScad.
-- /software should contain the config file specific to your robot
-- /doc should contain the doc
+These robot are exactly the same size as the [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr).
 
-A good practice is to add a picture/video of your robot here and explain how to get started. 
-
-Once you are happy with the design, it is also a good practice to create a release with the ready to use stl files.
+[BOM >>](hardware/parts/BOM.md)
