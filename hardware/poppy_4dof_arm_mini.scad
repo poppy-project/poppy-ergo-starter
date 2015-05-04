@@ -16,7 +16,6 @@ use <MCAD/rotate.scad>;
 
 
 module poppy_4dof_arm_mini_v1() {
-  circular_base_frame(BaseRadius, BaseHeight);
   xl320();
   translate_to_xl320_top()
     verticalize_U_horn_to_horn_frame(A){
@@ -43,7 +42,6 @@ module poppy_4dof_arm_mini_v1() {
 }
 
 module poppy_4dof_arm_mini_v2() {
-  circular_base_frame(BaseRadius, BaseHeight);
   xl320();
   translate_to_xl320_top()
     verticalize_U_horn_to_horn_frame(A){
@@ -73,7 +71,10 @@ echo("##########");
 
 p = 1;
 if (p==1) {
+  circular_base_frame(BaseRadius, BaseHeight);
   poppy_4dof_arm_mini_v1();
-  translate([100,0,0])
+  translate([100,0,0]) {
+    circular_base_frame(BaseRadius, BaseHeight);
     poppy_4dof_arm_mini_v2();
+  }
 }
