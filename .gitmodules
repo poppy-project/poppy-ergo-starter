@@ -3,7 +3,7 @@
 	url = https://github.com/jgrizou/MCAD.git
 [submodule "hardware/segment-scad"]
 	path = hardware/segment-scad
-	url = https://github.com/jgrizou/segment-scad
+	url = https://github.com/jgrizou/segment-scad.git
 [submodule "hardware/robotis-scad"]
 	path = hardware/robotis-scad
-	url = https://github.com/jgrizou/robotis-scad
+	url = https://github.com/jgrizou/robotis-scad.git
