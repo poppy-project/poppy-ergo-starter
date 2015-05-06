@@ -9,4 +9,4 @@ A = 25;
 B = 51;
 B2 = 81;
 C = 102;
-D = OlloSpacing+FrameTolerance;
+D = OlloSpacing/2+2*ollo_segment_thickness(1);
