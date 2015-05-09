@@ -4,8 +4,8 @@ include <poppy_4dof_arm_mini_def.scad>
 
 use <robotis-scad/dynamixel/xl320.scad>;
 
-use <specific_frames/base_frame.scad>;
-use <specific_frames/pen_holder_frame.scad>;
+use <robotis-scad/specific_frames/base_frame.scad>;
+use <robotis-scad/specific_frames/pen_holder_frame.scad>;
 
 use <robotis-scad/frames/side_to_side_frame.scad>;
 use <robotis-scad/frames/U_horn_to_horn_frame.scad>;
@@ -13,7 +13,6 @@ use <robotis-scad/frames/three_ollo_frame.scad>;
 use <robotis-scad/frames/horn_to_horn_frame.scad>;
 
 use <MCAD/rotate.scad>;
-
 
 module poppy_4dof_arm_mini_v1() {
   xl320();
