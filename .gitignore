@@ -1,1 +1,8 @@
 hardware/parts/stl
+
+.eggs/
+build/
+dist/
+*.egg-info/
+
+
