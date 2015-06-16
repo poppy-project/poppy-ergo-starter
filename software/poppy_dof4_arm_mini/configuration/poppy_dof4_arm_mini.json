@@ -4,15 +4,21 @@
       "sync_read": false,
       "protocol": 2,
       "attached_motors": [
-        "m1",
-        "m2",
-		"m3",
-		"m4"
+        "bottom",
+        "top"
       ],
       "port": "auto"
     }
   },
   "motorgroups": {
+    "bottom": [
+      "m1",
+      "m2"
+    ],
+    "top": [
+      "m3",
+      "m4"
+    ]
   },
   "motors": {
     "m1": {
@@ -36,7 +42,7 @@
       "orientation": "direct"
     },
     "m3": {
-      "offset": 0.0,
+      "offset": 90.0,
       "type": "XL-320",
       "id": 3,
       "angle_limit": [
