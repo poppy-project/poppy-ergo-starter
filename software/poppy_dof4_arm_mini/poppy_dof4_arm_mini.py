@@ -10,6 +10,6 @@ class PoppyDof4ArmMini(AbstractPoppyCreature):
         for m in robot.motors:
             m.compliant = False
 			
-		#robot.attach_primitive(Jump(robot), 'jump')
-		print "robot is setup"
+        #robot.attach_primitive(Jump(robot), 'jump')
+        print "robot is setup"
         
