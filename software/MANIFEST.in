@@ -1,0 +1,2 @@
+include poppy_dof4_arm_mini/configuration/*.json
+include poppy_dof4_arm_mini/vrep-scene/*.ttt
