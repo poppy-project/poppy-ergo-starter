@@ -1,7 +1,7 @@
 from poppy.creatures import AbstractPoppyCreature
 
 
-class PoppyDof4ArmMini(AbstractPoppyCreature):
+class Poppy4dofArmMini(AbstractPoppyCreature):
     @classmethod
     def setup(cls, robot):
         for m in robot.motors:

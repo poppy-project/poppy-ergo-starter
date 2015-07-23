@@ -1,1 +1,1 @@
-from poppy_dof4_arm_mini import PoppyDof4ArmMini
+from poppy_4dof_arm_mini import Poppy4dofArmMini
