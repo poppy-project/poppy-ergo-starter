@@ -1,7 +1,7 @@
 from poppy.creatures import AbstractPoppyCreature
 
 
-class PoppyDof4ArmMini(AbstractPoppyCreature):
+class Poppy4dofArmMini(AbstractPoppyCreature):
     @classmethod
     def setup(cls, robot):
         for m in robot.motors:
@@ -11,5 +11,5 @@ class PoppyDof4ArmMini(AbstractPoppyCreature):
             m.compliant = False
 			
         #robot.attach_primitive(Jump(robot), 'jump')
-        print "robot is setup"
+        #print "robot is setup"
         
