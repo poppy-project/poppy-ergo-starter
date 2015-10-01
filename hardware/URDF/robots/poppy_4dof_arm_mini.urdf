@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="Poppy_4dof_Arm_Mini">
+	<link name="base_motor">
+		<inertial>
+			<origin xyz="0 -0.003349 -0.007144" rpy="0 0 0"></origin>
+			<mass value="0.0391346684"></mass>
+			<inertia ixx="0.01991511" ixy="-1.627E-12" ixz="-3.3502E-11" iyy="0.018856556" iyz="0.0010117547" izz="0.032481808"></inertia>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/base_motor_visual.STL"></mesh>
+			</geometry>
+			<material name="">
+				<color rgba="0.9 0.9 0.9 1.0"></color>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/base_motor_respondable.STL"></mesh>
+			</geometry>
+		</collision>
+		<mass>0.0391346684</mass>
+	</link>
+	<link name="U_horn">
+		<inertial>
+			<origin xyz="0 0.013288 0" rpy="0 0 0"></origin>
+			<mass value="0.0042280066"></mass>
+			<inertia ixx="0.0014620794" ixy="0" ixz="-8.78E-13" iyy="0.0011395926" iyz="0" izz="0.0006457789"></inertia>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/U_horn_visual.STL"></mesh>
+			</geometry>
+			<material name="">
+				<color rgba="0.9 0.9 0.9 1.0"></color>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/U_horn_respondable.STL"></mesh>
+			</geometry>
+		</collision>
+		<mass>0.0042280066</mass>
+	</link>
+	<link name="arm_1">
+		<inertial>
+			<origin xyz="0 0.000057479 0.049499928" rpy="0 0 0"></origin>
+			<mass value="0.0430952766"></mass>
+			<inertia ixx="0.08214364" ixy="2.97266E-10" ixz="5.81285E-10" iyy="0.083140664" iyz="-6.131977E-09" izz="0.0061720795"></inertia>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="1.5708 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/arm1_visual.STL"></mesh>
+			</geometry>
+			<material name="">
+				<color rgba="0.9 0.9 0.9 1.0"></color>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="1.5708 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/arm1_respondable.STL"></mesh>
+			</geometry>
+		</collision>
+		<mass>0.0430952766</mass>
+	</link>
+	<link name="arm_2">
+		<inertial>
+			<origin xyz="0 0.050999855 0" rpy="0 0 0"></origin>
+			<mass value="0.010259289"></mass>
+			<inertia ixx="0.014484899" ixy="0" ixz="-2.42E-13" iyy="0.004054289" iyz="1.06451E-10" izz="0.017657572"></inertia>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 1.5708 3.14160 "></origin>
+			<geometry>
+				<mesh filename="package://meshes/arm2_visual.STL"></mesh>
+			</geometry>
+			<material name="">
+				<color rgba="0.9 0.9 0.9 1.0"></color>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 1.57080 3.14160"></origin>
+			<geometry>
+				<mesh filename="package://meshes/arm2_respondable.STL"></mesh>
+			</geometry>
+		</collision>
+		<mass>0.010259289</mass>
+	</link>
+	<link name="holder">
+		<inertial>
+			<origin xyz="0 -0.012510048 -0.000058315" rpy="0 0 0"></origin>
+			<mass value="0.0212559855"></mass>
+			<inertia ixx="0.0063271895" ixy="-1.9672E-11" ixz="-1.6458E-11" iyy="0.0024594695" iyz="1.7191568359E-05" izz="0.0058998525"></inertia>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0 "></origin>
+			<geometry>
+				<mesh filename="package://meshes/holder_visual.STL"></mesh>
+			</geometry>
+			<material name="">
+				<color rgba="0.9 0.9 0.9 1.0"></color>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"></origin>
+			<geometry>
+				<mesh filename="package://meshes/holder_respondable.STL"></mesh>
+			</geometry>
+		</collision>
+		<mass>0.0212559855</mass>
+	</link>
+	<joint name="M1" type="revolute">
+		<origin xyz="0 0 0.04" rpy="-1.5708 0 0"></origin>
+		<parent link="base_motor"></parent>
+		<child link="U_horn"></child>
+		<axis xyz="0 1 0"></axis>
+		<limit lower="-2.617993875" upper="2.617993875" effort="3.1" velocity="7.0"></limit>
+	</joint>
+	<joint name="M2" type="revolute">
+		<origin xyz="0 0 0" rpy="0 0 0"></origin>
+		<parent link="U_horn"></parent>
+		<child link="arm_1"></child>
+		<axis xyz="0 0 1"></axis>
+		<limit lower="-1.5708" upper="1.5708" effort="3.1" velocity="7.0"></limit>
+	</joint>
+	<joint name="M3" type="revolute">
+		<origin xyz="0 -0.099 0" rpy="0 0 0"></origin>
+		<parent link="arm_1"></parent>
+		<child link="arm_2"></child>
+		<axis xyz="0 0 1"></axis>
+		<limit lower="-2.617993875" upper="2.617993875" effort="3.1" velocity="7.0"></limit>
+	</joint>
+	<joint name="M4" type="revolute">
+		<origin xyz="0 -0.099 0" rpy="0 0 0"></origin>
+		<parent link="arm_2"></parent>
+		<child link="holder"></child>
+		<axis xyz="0 0 0"></axis>
+		<limit lower="-2.617993875" upper="2.617993875" effort="3.1" velocity="7.0"></limit>
+	</joint>
+</robot>
