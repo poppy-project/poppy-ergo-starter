@@ -1,7 +1,7 @@
 {
   "controllers": {
     "my_dxl_controller": {
-      "sync_read": false,
+      "sync_read": true,
       "protocol": 2,
       "attached_motors": [
         "bottom",
@@ -23,7 +23,7 @@
   "motors": {
     "m1": {
       "offset": 0.0,
-      "type": "XL-320",
+      "type": "AX-12",
       "id": 1,
       "angle_limit": [
         -150.0,
@@ -33,7 +33,7 @@
     },
     "m2": {
       "offset": 0.0,
-      "type": "XL-320",
+      "type": "AX-12",
       "id": 2,
       "angle_limit": [
         -90.0,
@@ -43,7 +43,7 @@
     },
     "m3": {
       "offset": 0.0,
-      "type": "XL-320",
+      "type": "AX-12",
       "id": 3,
       "angle_limit": [
         -150.0,
@@ -53,7 +53,7 @@
     },
     "m4": {
       "offset": 0.0,
-      "type": "XL-320",
+      "type": "AX-12",
       "id": 4,
       "angle_limit": [
         -150.0,
