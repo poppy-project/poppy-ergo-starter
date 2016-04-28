@@ -7,14 +7,14 @@ from setuptools import setup, find_packages
 
 
 def version():
-    with open('poppy_4dof_arm_mini/_version.py') as f:
+    with open('poppy_ergo_starter/_version.py') as f:
         return re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", f.read()).group(1)
 
 extra = {}
 if sys.version_info >= (3,):
     extra['use_2to3'] = True
 
-setup(name='poppy-4dof-arm-mini',
+setup(name='poppy-ergo-starter',
       version=version(),
       packages=find_packages(),
 
