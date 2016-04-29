@@ -1,2 +1,2 @@
-include poppy_4dof_arm_mini/configuration/*.json
-include poppy_4dof_arm_mini/vrep-scene/*.ttt
+include poppy_ergo_starter/configuration/*.json
+include poppy_ergo_starter/vrep-scene/*.ttt

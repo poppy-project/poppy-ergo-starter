@@ -1,1 +1,0 @@
-from poppy_4dof_arm_mini import Poppy4dofArmMini

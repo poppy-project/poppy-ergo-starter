@@ -1,0 +1,65 @@
+{
+  "controllers": {
+    "my_dxl_controller": {
+      "sync_read": false,
+      "protocol": 2,
+      "attached_motors": [
+        "bottom",
+        "top"
+      ],
+      "port": "auto"
+    }
+  },
+  "motorgroups": {
+    "bottom": [
+      "m1",
+      "m2"
+    ],
+    "top": [
+      "m3",
+      "m4"
+    ]
+  },
+  "motors": {
+    "m1": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 1,
+      "angle_limit": [
+        -150.0,
+        150.0
+      ],
+      "orientation": "indirect"
+    },
+    "m2": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 2,
+      "angle_limit": [
+        -90.0,
+        90.0
+      ],
+      "orientation": "direct"
+    },
+    "m3": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 3,
+      "angle_limit": [
+        -150.0,
+        150.0
+      ],
+      "orientation": "indirect"
+    },
+    "m4": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 4,
+      "angle_limit": [
+        -150.0,
+        150.0
+      ],
+      "orientation": "direct"
+    }
+  }
+}
