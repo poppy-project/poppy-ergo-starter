@@ -1,4 +1,4 @@
-from poppy.creatures import AbstractPoppyCreature
+from pypot.creatures import AbstractPoppyCreature
 
 
 class PoppyErgoStarter(AbstractPoppyCreature):
