@@ -14,7 +14,7 @@ It comes with three tools:
 * a pen holder
 
 
-The Ergo Poppy Starter is ideal to start manipulating robots and learn robotic without difficulties.
+The Poppy Ergo Starter is ideal to start manipulating robots and learn robotic without difficulties.
 
 It is particularly well suited for educational purposes (cheap, simple to assemble, and easily controllable) or can be a very nice desk decoration for geeks and makers...
 

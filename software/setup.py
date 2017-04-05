@@ -27,7 +27,7 @@ setup(name='poppy-ergo-starter',
 
       author='https://github.com/poppy-project/poppy-ergo-starter/graphs/contributors',
       author_email='pierre.rouanet@gmail.com',
-      description=' Poppy 4 dof arm mini Software Library',
+      description=' Poppy Ergo Starter Software Library',
       url='https://github.com/poppy-project/poppy-ergo-starter',
       license='GNU GENERAL PUBLIC LICENSE Version 3',
 

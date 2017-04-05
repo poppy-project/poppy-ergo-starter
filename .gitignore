@@ -4,5 +4,3 @@ hardware/parts/stl
 build/
 dist/
 *.egg-info/
-
-
