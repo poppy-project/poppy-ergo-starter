@@ -1,4 +1,4 @@
-from poppy.creatures import AbstractPoppyCreature
+from pypot.creatures import AbstractPoppyCreature
 
 
 class PoppyErgoStarter(AbstractPoppyCreature):
@@ -6,7 +6,3 @@ class PoppyErgoStarter(AbstractPoppyCreature):
     def setup(cls, robot):
         for m in robot.motors:
             m.goto_behavior = 'dummy'
-
-        #robot.attach_primitive(Jump(robot), 'jump')
-        #print "robot is setup"
-        
